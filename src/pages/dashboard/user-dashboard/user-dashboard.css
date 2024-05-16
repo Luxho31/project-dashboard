@@ -1,0 +1,119 @@
+.table {
+    width: 100%;
+    height: 80vh;
+
+    .table--header {
+        /* width: 100%; */
+        h1 {
+            font-size: var(--h1FontSize);
+            color: var(--blackColor);
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .table--body {
+        width: 100%;
+        max-height: calc(89% - .8rem);
+        /* max-height: 50rem; */
+        background-color: #fffb;
+        /* margin: .8rem auto; */
+        border-radius: .6rem;
+        overflow: auto;
+        /* box-shadow: 0 .4rem .8rem #0005; */
+
+        &::-webkit-scrollbar {
+            width: 0.5rem;
+            height: 0.5rem;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            border-radius: .5rem;
+            background-color: #0004;
+            visibility: hidden;
+        }
+
+        &:hover::-webkit-scrollbar-thumb {
+            visibility: visible;
+        }
+
+        table,
+        th,
+        td {
+            border-collapse: collapse;
+            padding: 1rem;
+            text-align: left;
+        }
+
+        table {
+            width: 100%;
+
+            th {
+                position: sticky;
+                top: 0;
+                left: 0;
+                background-color: var(--paleGreenDark);
+            }
+
+            tbody {
+                tr {
+                    transition: .3s ease;
+
+                    &:nth-child(even) {
+                        background-color: #0000000b;
+                        /* background-color: var(--paleGreenLight); */
+
+                    }
+
+                    &:hover {
+                        background-color: var(--paleGreen);
+                    }
+
+                    td {
+                        img {
+                            width: 36px;
+                            height: 36px;
+                            margin-right: .5rem;
+                            border-radius: 50%;
+                            object-fit: cover;
+
+                            vertical-align: middle;
+                        }
+
+                        .status {
+                            padding: .4rem 0;
+                            border-radius: 2rem;
+                            text-align: center;
+                        }
+
+                        .delivered {
+                            background-color: #86e49d;
+                            color: #006b21;
+                        }
+
+                        .cancelled {
+                            background-color: #d893a3;
+                            color: #b30021;
+                        }
+
+                        .pending {
+                            background-color: #ebc474;
+                        }
+
+                        .shipped {
+                            background-color: #6fcaea;
+                        }
+
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    td:not(:first-of-type) {
+        min-width: 12.1rem;
+    }
+}

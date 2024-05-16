@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+    /* transition: .3s ease; */
+}
+
+html {
+    font-size: 90%;
+}
+
+/* Colors and Styles (Default) */
+:root {
+    /* Dashboard */
+    --PrimaryColor: hsl(94, 59%, 35%);
+    --HoverColor: #bdf094;
+    --paleGreen: hsl(94, 75%, 89%);
+    /* Nuevo */
+    --paleGreenLight: hsl(96, 100%, 95%);
+    --paleGreenDark: hsl(95, 86%, 81%);
+    /* Nuevo */
+    /* --whiteColor: hsl(0, 0%, 100%); */
+    /* --blackColor: hsl(0, 0%, 18%); */
+    --textColor: hsl(240, 1%, 48%);
+    --bgColor1: hsl(220, 10%, 94%);
+    --greyText1: rgb(190, 190, 190);
+    /* --inputColor: hsl(330, 12%, 97%); */
+
+    /* Font and Typography */
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 1.5rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: .938rem;
+    --smallFontSize: .813rem;
+    --smallesFontSize: .75rem;
+
+    /* Authentication */
+    --primaryColor: hsl(94, 55%, 56%);
+    --hoverColor: hsl(93, 75%, 76%);
+    --paleColor: hsl(96, 75%, 89%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --greyText: hsl(0, 0%, 75%);
+    --bgColor: hsl(113, 11%, 85%);
+    --inputColor: hsl(330, 12%, 97%);
+    /* --inputColor: hsl(154, 14%, 90%); */
+}
+
+/* .icon {
+    font-size: var(--h2FontSize);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--inputColor);
+    padding: .8rem 1rem;
+    color: var(--textColor);
+}
+
+.btn .icon {
+    margin-left: .5rem;
+}
+
+.btn:hover {
+    background: var(--paleGreen);
+    color: var(--PrimaryColor);
+} */
